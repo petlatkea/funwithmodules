@@ -3,6 +3,11 @@
 let globalName = "Peter";
 
 export function capitalize( str ) {
+  if(str.includes(" ") ) {
+    const parts = str.split(" ");
+    const fullname = parts.map( capitalize ).join(" ");
+    return fullname;
+  }
   if(!str) {
     str = globalName;
   }
