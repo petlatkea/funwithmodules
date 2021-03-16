@@ -7,7 +7,7 @@ function start() {
   window.start = start; // Hack for exposing the start() function to the console!
   console.log("Start!");
 
-  sayHello("justin finch-fletchley");
+  sayHello("justin fiNCh-fleTchley");
   
 }
 
