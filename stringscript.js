@@ -20,7 +20,10 @@ export function capitalize( str ) {
 
 function capitalizeHyphen( str ) {
   const hyphenPos = str.indexOf("-");
-  const result = str.substring(0,hyphenPos+1) + str.charAt(hyphenPos+1).toUpperCase() + str.substring(hyphenPos+2).toLowerCase();
+  const result = str.charAt(0).toUpperCase() +           
+              str.substring(1,hyphenPos+1).toLowerCase() +
+              str.charAt(hyphenPos+1).toUpperCase() +
+              str.substring(hyphenPos+2).toLowerCase();
 
   return result;
 }
